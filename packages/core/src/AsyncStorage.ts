@@ -48,7 +48,7 @@ class AsyncStorage<M, T extends IStorageBackend<M>> {
           : simpleErrorHandler;
     }
   }
-  async get<K extends keyof M>(
+  async getItem<K extends keyof M>(
     key: K,
     opts: StorageOptions = null,
   ): Promise<M[K] | null> {
@@ -66,7 +66,7 @@ class AsyncStorage<M, T extends IStorageBackend<M>> {
     return value;
   }
 
-  async set<K extends keyof M>(
+  async setItem<K extends keyof M>(
     key: K,
     value: M[K],
     opts: StorageOptions = null,

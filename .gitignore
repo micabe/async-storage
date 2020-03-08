@@ -32,7 +32,6 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
@@ -46,7 +45,3 @@ buck-out/
 # Editor config
 .vscode
 
-
-# Async Storage
-core/build
-storages/**/build
